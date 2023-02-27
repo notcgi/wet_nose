@@ -14,6 +14,7 @@ RUN composer install  \
     --no-ansi \
     --no-autoloader \
     --no-interaction \
-    --no-scripts
+    --no-scripts \
+
 COPY . ./
 RUN #composer dump-autoload --optimize --classmap-authoritative
